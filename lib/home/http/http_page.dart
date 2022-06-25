@@ -19,8 +19,10 @@ class HttpPage extends GetView<HttpController> {
           itemCount: state.length,
           itemBuilder: (_, index) {
             final MovieModel item = state[index];
-            return ListTile(
+             return ListTile(
+              leading: Image.network(item.foto),
               title: Text(item.nome),
+              subtitle: Text(item.sinopse),
             );
           },
         );
