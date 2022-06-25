@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 class MovieModel {
-  String id;
+  int id;
   String nome;
   String sinopse;
   String foto;
